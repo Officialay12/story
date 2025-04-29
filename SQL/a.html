@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayo's Redemption - I had a Dream Story🤾‍♂️💪</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap');
+        
+        :root {
+            --primary: #6a3093;
+            --secondary: #a044ff;
+            --accent: #ff6b6b;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --success: #4cc9f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        .sung-design-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+  z-index: 2;
+}
+
+.sung-wordmark {
+  display: inline-flex;
+  font-family: 'Arial Black', sans-serif;
+  font-weight: 900;
+  font-size: clamp(3rem, 8vw, 6rem);
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #a044ff, #6a3093);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.sung-letter {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Individual letter colors (optional) */
+.s { transform: rotate(-5deg); }
+.u { transform: rotate(3deg); }
+.n { transform: rotate(-2deg); }
+.g { transform: rotate(5deg); }
+
+/* Hover effects */
+.sung-wordmark:hover .sung-letter {
+  animation: letterBounce 0.5s ease;
+}
+
+@keyframes letterBounce {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-15px) rotate(5deg); }
+}
+                /* Floating background characters */
+                .floating-characters {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .floating-character {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.15;
+            filter: blur(1px);
+            transition: opacity 0.5s ease;
+        }
+        
+        .floating-character:nth-child(1) {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="30" r="20" fill="%23d4a373"/><circle cx="50" cy="30" r="15" fill="%23fff"/><circle cx="50" cy="30" r="10" fill="%23d4a373"/><path d="M40,50 Q50,60 60,50" stroke="%23d4a373" fill="none" stroke-width="2"/><rect x="30" y="70" width="40" height="30" rx="5" fill="%234cc9f0"/></svg>');
+            top: 20%;
+            left: 10%;
+        }
+        
+        .floating-character:nth-child(2) {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="30" r="20" fill="%236a3093"/><circle cx="50" cy="30" r="15" fill="%23fff"/><circle cx="50" cy="30" r="10" fill="%236a3093"/><path d="M40,50 Q50,60 60,50" stroke="%236a3093" fill="none" stroke-width="2"/><path d="M30,70 Q50,90 70,70" fill="%23ff6b6b"/></svg>');
+            top: 60%;
+            left: 80%;
+        }
+        
+        .floating-character:nth-child(3) {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="30" r="20" fill="%23ff6b6b"/><circle cx="50" cy="30" r="15" fill="%23fff"/><circle cx="50" cy="30" r="10" fill="%23ff6b6b"/><path d="M40,50 Q50,60 60,50" stroke="%23ff6b6b" fill="none" stroke-width="2"/><rect x="30" y="70" width="40" height="30" rx="5" fill="%23a044ff"/></svg>');
+            top: 30%;
+            left: 70%;
+        }
+        
+        .floating-character:nth-child(4) {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="30" r="20" fill="%234cc9f0"/><circle cx="50" cy="30" r="15" fill="%23fff"/><circle cx="50" cy="30" r="10" fill="%234cc9f0"/><path d="M40,50 Q50,40 60,50" stroke="%234cc9f0" fill="none" stroke-width="2"/><rect x="30" y="70" width="40" height="30" rx="5" fill="%23d4a373"/></svg>');
+            top: 70%;
+            left: 20%;
+        }
+        
+        .floating-character:nth-child(5) {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="30" r="20" fill="%23a044ff"/><circle cx="50" cy="30" r="15" fill="%23fff"/><circle cx="50" cy="30" r="10" fill="%23a044ff"/><path d="M40,50 Q50,60 60,50" stroke="%23a044ff" fill="none" stroke-width="2"/><path d="M30,70 Q50,90 70,70" fill="%236a3093"/></svg>');
+            top: 50%;
+            left: 50%;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+            padding: 2rem 0;
+            border-radius: 0 0 20px 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transform-style: preserve-3d;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Q50,80 0,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+            background-size: 100% 100%;
+            opacity: 0.2;
+            z-index: -1;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #f3d7ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .story-container {
+            background: rgba(26, 26, 46, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 3rem;
+        }
+        
+        .story-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(106, 48, 147, 0.1) 0%, rgba(26, 26, 46, 0) 70%);
+            animation: rotate 60s linear infinite;
+            z-index: -1;
+        }
+        
+        .story-section {
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .story-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(to right, var(--accent), var(--secondary));
+            border-radius: 3px;
+        }
+        
+        .story-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .story-text::first-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            float: left;
+            line-height: 1;
+            margin-right: 0.5rem;
+            color: var(--accent);
+        }
+        
+        .highlight {
+            background: linear-gradient(to right, rgba(106, 48, 147, 0.3), rgba(106, 48, 147, 0));
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .highlight:hover {
+            background: linear-gradient(to right, rgba(106, 48, 147, 0.5), rgba(106, 48, 147, 0.2));
+            transform: scale(1.02);
+        }
+        
+        .character {
+            position: fixed;
+            width: 150px;
+            height: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+            transition: all 0.5s ease;
+            z-index: 10;
+            cursor: pointer;
+        }
+        
+        .ayo {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="30" r="20" fill="%23333"/><circle cx="50" cy="30" r="15" fill="%23fff"/><circle cx="50" cy="30" r="10" fill="%23333"/><path d="M40,50 Q50,60 60,50" stroke="%23333" fill="none" stroke-width="2"/><rect x="30" y="70" width="40" height="30" rx="5" fill="%234cc9f0"/></svg>');
+            bottom: -100px;
+            left: 20%;
+        }
+        
+        .lola {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="30" r="20" fill="%23d4a373"/><circle cx="50" cy="30" r="15" fill="%23fff"/><circle cx="50" cy="30" r="10" fill="%23d4a373"/><path d="M40,50 Q50,60 60,50" stroke="%23d4a373" fill="none" stroke-width="2"/><path d="M30,70 Q50,90 70,70" fill="%23ff6b6b"/></svg>');
+            top: -100px;
+            right: 20%;
+        }
+        
+        .interactive-element {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .interactive-element:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .interactive-element::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent 0%, rgba(255, 255, 255, 0.05) 50%, transparent 100%);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+        
+        .interactive-element:hover::before {
+            transform: translateX(100%);
+        }
+        
+        .poem {
+            font-style: italic;
+            padding: 1.5rem;
+            background: rgba(76, 201, 240, 0.1);
+            border-left: 3px solid var(--success);
+            border-radius: 0 10px 10px 0;
+            margin: 1.5rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .poem:hover {
+            background: rgba(76, 201, 240, 0.2);
+            transform: scale(1.02);
+        }
+        
+        .quote {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--accent);
+            padding: 1.5rem;
+            border-radius: 10px;
+            background: rgba(255, 107, 107, 0.1);
+            border-left: 3px solid var(--accent);
+            margin: 1.5rem 0;
+            position: relative;
+        }
+        
+        .quote::before, .quote::after {
+            content: '"';
+            font-size: 2rem;
+            color: var(--accent);
+            opacity: 0.3;
+            position: absolute;
+        }
+        
+        .quote::before {
+            top: 5px;
+            left: 10px;
+        }
+        
+        .quote::after {
+            bottom: 5px;
+            right: 10px;
+        }
+        
+        .success-montage {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .success-item {
+            flex: 1 1 200px;
+            background: rgba(76, 201, 240, 0.1);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(76, 201, 240, 0.2);
+        }
+        
+        .success-item:hover {
+            background: rgba(76, 201, 240, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(76, 201, 240, 0.1);
+        }
+        
+        .success-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--success);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            background: linear-gradient(to top, rgba(26, 26, 46, 0.9), transparent);
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+        }
+        
+        .ending-message {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--success);
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        .floating-logos-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-logo {
+    position: absolute;
+    opacity: 0.7;
+    will-change: transform;
+    user-select: none;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: opacity 0.3s ease;
+}
+
+.floating-logo:hover {
+    opacity: 1;
+}
+
+.ayo-logo {
+    filter: drop-shadow(0 0 8px rgba(160, 68, 255, 0.4));
+}
+
+.lola-logo {
+    filter: drop-shadow(0 0 8px rgba(255, 193, 7, 0.4));
+}
+
+/* For custom SVG logos (alternative to emoji) */
+.floating-logo svg {
+    width: 100%;
+    height: 100%;
+}
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .story-container {
+                padding: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .character {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        
+        /* Floating particles */
+        .particle {
+            position: fixed;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--dark);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary);
+        }
+        
+        /* Typewriter effect */
+        .typewriter {
+            overflow: hidden;
+            border-right: 2px solid var(--accent);
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+                /* Rating Component Styles */
+                .rating-container {
+            background: rgba(26, 26, 46, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 3rem auto;
+            text-align: center;
+            max-width: 600px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(50px);
+            opacity: 0;
+            transition: all 0.8s ease;
+        }
+        
+        .rating-container.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .rating-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .rating-stars {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .star {
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .star svg {
+            width: 40px;
+            height: 40px;
+            fill: rgba(255, 255, 255, 0.2);
+            stroke: var(--secondary);
+            stroke-width: 1px;
+            transition: all 0.3s ease;
+        }
+        
+        .star .emoji {
+            font-size: 1.2rem;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            position: absolute;
+            bottom: -25px;
+        }
+        
+        .star:hover svg {
+            transform: scale(1.2);
+            fill: rgba(160, 68, 255, 0.3);
+        }
+        
+        .star.active svg {
+            fill: var(--secondary);
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 5px rgba(160, 68, 255, 0.5));
+        }
+        
+        .star.active .emoji,
+        .star:hover .emoji {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .rating-message {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .rating-feedback {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+        
+        .rating-feedback.visible {
+            max-height: 300px;
+            margin-top: 1rem;
+        }
+        
+        .rating-feedback textarea {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 1rem;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            resize: none;
+            min-height: 100px;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .rating-feedback textarea:focus {
+            outline: none;
+            border-color: var(--secondary);
+            background: rgba(160, 68, 255, 0.1);
+        }
+        
+        .submit-rating {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(106, 48, 147, 0.3);
+        }
+        
+        .submit-rating:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(106, 48, 147, 0.4);
+        }
+        .closing-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #6a3093 0%, #a044ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease-out;
+}
+
+.closing-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.closing-container {
+  background: white;
+  border-radius: 24px;
+  padding: 3rem;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.closing-overlay.active .closing-container {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Animated checkmark */
+.checkmark {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1.5rem;
+}
+
+.checkmark-circle {
+  stroke: #6a3093;
+  stroke-width: 2;
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-miterlimit: 10;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark-check {
+  transform-origin: 50% 50%;
+  stroke: #6a3093;
+  stroke-width: 2;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% { stroke-dashoffset: 0; }
+}
+
+/* Text styles */
+.closing-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #6a3093;
+  margin-bottom: 0.5rem;
+}
+
+.closing-message {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Animated stars */
+.closing-stars {
+  position: relative;
+  height: 60px;
+  margin: 2rem 0;
+}
+
+.star-pulse {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #a044ff;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.star-pulse::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  z-index: -1;
+  animation: pulse 2s infinite;
+}
+
+.delay-1 { animation: float-up 1.5s ease-in 0.5s forwards; }
+.delay-2 { animation: float-up 1.5s ease-in 1s forwards; }
+
+@keyframes float-up {
+  0% { opacity: 0; transform: translate(-50%, 20px); }
+  50% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, -40px); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  70% { transform: scale(3); opacity: 0; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+  position:fixed{ 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(106, 48, 147, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--accent); }
+        }
+    </style>
+</head>
+<body>
+    <div class="character ayo" id="ayo-character"></div>
+    <div class="character lola" id="lola-character"></div>
+    
+    <header>
+        <div class="container">
+            <h1>Ayo's Redemption</h1>
+            <p class="subtitle">A story of love, dedication, and ultimate victory</p>
+            <div class="sung-design-container">
+                <div class="sung-wordmark">
+                  <span class="sung-letter s">S</span>
+                  <span class="sung-letter u">U</span>
+                  <span class="sung-letter n">N</span>
+                  <span class="sung-letter g">G</span>
+                </div>
+                  </div>
+        </div>
+    </header>
+        <!-- Floating Background Characters -->
+        <div class="floating-characters">
+            <div class="floating-character" data-speed="0.5" data-direction="1"></div>
+            <div class="floating-character" data-speed="0.7" data-direction="-1"></div>
+            <div class="floating-character" data-speed="0.3" data-direction="1"></div>
+            <div class="floating-character" data-speed="0.6" data-direction="-1"></div>
+            <div class="floating-character" data-speed="0.4" data-direction="1"></div>
+        </div>
+    <div class="container">
+        <div class="story-container">
+            <div class="story-section" id="intro">
+                <h2 class="section-title">The Chase Begins</h2>
+                <div class="story-text">
+                    <p>Ayo was the kind of guy who wore his heart on his sleeve. From the moment he laid eyes on <span class="highlight">Lola</span>, the most beautiful girl in school, he was done for. She had honey-brown eyes, a laugh that sounded like music, and a confidence that made even the teachers pause when she spoke. Ayo, on the other hand, was just… Ayo. Lanky, awkward, and far too earnest for his own good.</p>
+                </div>
+                
+                <div class="interactive-element" id="first-poem">
+                    <h3>Ayo's First Poem to Lola</h3>
+                    <div class="poem">
+                        <p>Your eyes like pools of golden light,<br>
+                        Your smile so warm, so sweet, so bright.<br>
+                        If love were measured in stars above,<br>
+                        Mine for you would outshine them all, my love.</p>
+                    </div>
+                    <p class="story-text">Ayo slipped this poem into Lola's locker, only to hear her read it aloud later that day to a chorus of giggles from her friends.</p>
+                </div>
+            </div>
+            
+            <div class="story-section" id="humiliation">
+                <h2 class="section-title">The Humiliation</h2>
+                <div class="story-text">
+                    <p>The teasing got worse. Boys in his class called him <span class="highlight">"Lola's Puppy"</span> because he followed her around like a lovesick fool. Girls pitied him, whispering behind his back about how sad it was that he couldn't take a hint. Even teachers gave him sympathetic looks when Lola rolled her eyes at him in class.</p>
+                </div>
+                
+                <div class="quote">
+                    "You? Seriously? Ayo, you're sweet, but… no. Just no."
+                </div>
+                
+                <div class="story-text">
+                    <p>The rejection was like a knife twisting in his gut. That night, he cried into his pillow, wondering why he wasn't good enough.</p>
+                </div>
+            </div>
+            
+            <div class="story-section" id="turning-point">
+                <h2 class="section-title">The Turning Point</h2>
+                <div class="story-text">
+                    <p>Something snapped in Ayo after that. He stopped writing poems. Stopped buying gifts. Stopped looking at Lola altogether. Instead, he buried himself in books, in the gym, in coding tutorials late into the night. He worked like a man possessed, channeling every ounce of his heartbreak into something greater.</p>
+                </div>
+            </div>
+            
+            <div class="story-section" id="success">
+                <h2 class="section-title">The Success</h2>
+                <div class="story-text">
+                    <p>Years passed. Ayo graduated top of his class, earned a scholarship to a prestigious university, and by 25, he was a self-made tech entrepreneur. His app, designed to help small businesses, exploded in popularity. Suddenly, he was on magazine covers, invited to speak at conferences, and surrounded by people who admired him.</p>
+                </div>
+                
+                <div class="success-montage">
+                    <div class="success-item">
+                        <div class="success-icon">🎓</div>
+                        <h3>Top Graduate</h3>
+                        <p>Finished first in his class with honors</p>
+                    </div>
+                    <div class="success-item">
+                        <div class="success-icon">💻</div>
+                        <h3>Tech Entrepreneur</h3>
+                        <p>Founded a successful app company</p>
+                    </div>
+                    <div class="success-item">
+                        <div class="success-icon">📈</div>
+                        <h3>Millionaire</h3>
+                        <p>Achieved financial success by age 25</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story-section" id="return">
+                <h2 class="section-title">The Return of Lola</h2>
+                <div class="story-text">
+                    <p>One evening, at a high-profile charity gala, Ayo spotted her. Lola. Still stunning, but with a nervous energy he'd never seen before. She approached him, a hesitant smile on her lips.</p>
+                </div>
+                
+                <div class="interactive-element" id="final-conversation">
+                    <div class="quote">
+                        "Ayo… wow. Look at you."
+                    </div>
+                    <p class="story-text">Her voice was softer now, almost unsure.</p>
+                    <div class="quote">
+                        "Lola. Long time."
+                    </div>
+                    <p class="story-text">He sipped his champagne, unfazed.</p>
+                    <div class="quote">
+                        "I've been following your success. You've done… amazing things."
+                    </div>
+                    <div class="quote">
+                        "Yeah," he said simply.
+                    </div>
+                </div>
+                
+                <div class="story-text">
+                    <p>There was an awkward pause before she leaned in, lowering her voice.</p>
+                    <div class="quote">
+                        "You know… I always wondered what could've happened between us if I'd given you a chance back then."
+                    </div>
+                    <p>Ayo studied her face—the same face that had haunted his dreams, the same lips that had once curled in mockery. He felt nothing but pity.</p>
+                    <div class="quote">
+                        "Funny how that works. Back then, you couldn't see me. Now, I don't see you."
+                    </div>
+                    <p>Her smile faltered as he walked away, leaving her standing there, the ghost of his past finally laid to rest.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ending-message">
+            The Sweetest Victory
+        </div>
+        <div class="story-text">
+            <p>As he stepped into the night air, Ayo realized something: her rejection had been the greatest gift she could've given him. It forced him to become someone she could never deserve.</p>
+            <p>And that? That was the sweetest victory of all.</p>
+        </div>
+    </div>
+            <!-- Rate This Story Section -->
+            <div class="rating-container">
+                <h3 class="rating-title">How did this story make you feel?</h3>
+                <div class="rating-stars">
+                    <div class="star" data-rating="1">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>
+                        <span class="emoji">😢</span>
+                    </div>
+                    <div class="star" data-rating="2">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>
+                        <span class="emoji">😕</span>
+                    </div>
+                    <div class="star" data-rating="3">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>
+                        <span class="emoji">😐</span>
+                    </div>
+                    <div class="star" data-rating="4">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>
+                        <span class="emoji">😊</span>
+                    </div>
+                    <div class="star" data-rating="5">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>
+                        <span class="emoji">😍</span>
+                    </div>
+                </div>
+                <div class="rating-message">
+                    <p>Share your thoughts about Ayo's journey</p>
+                </div>
+                <div class="rating-feedback hidden">
+                    <textarea placeholder="What did you like most about this story?"></textarea>
+                    <button class="submit-rating">Submit Rating</button>
+                </div>
+            </div>
+            <div class="closing-overlay">
+                <div class="closing-container">
+                  <div class="closing-content">
+                    <!-- Animated checkmark -->
+                    <svg class="checkmark" viewBox="0 0 52 52">
+                      <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                      <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                    
+                    <!-- Main message -->
+                    <h2 class="closing-title">Thank You!</h2>
+                    <p class="closing-message">Your feedback helps us improve</p>
+                    
+                    <!-- Decorative elements -->
+                    <div class="closing-stars">
+                      <div class="star-pulse"></div>
+                      <div class="star-pulse delay-1"></div>
+                      <div class="star-pulse delay-2"></div>
+                    </div>
+                    
+                    <!-- Closing button -->
+                    <button class="closing-button">
+                      <span>Continue Exploring</span>
+                      <svg viewBox="0 0 24 24" class="arrow-icon">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                
+                <!-- Background elements -->
+                <div class="closing-bg-elements">
+                  <div class="bg-circle circle-1"></div>
+                  <div class="bg-circle circle-2"></div>
+                  <div class="bg-circle circle-3"></div>
+                </div>
+              </div>
+    <footer>
+        <p>Created with ❤️ by Sung</p>
+        <p>A future true life experience 🚶‍♂️<strong>TCH!!</strong></p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create floating particles
+            createParticles();
+            
+            // Animate characters
+            animateCharacters();
+            
+            // Animate story sections as user scrolls
+            animateOnScroll();
+            
+            // Add hover effects to interactive elements
+            setupInteractiveElements();
+            
+            // Typewriter effect for certain elements
+            applyTypewriterEffect();
+          // Animate floating background characters
+           animateFloatingCharacters();
+         // Rating system functionality
+            setupRatingSystem();
+        });
+        
+        function createParticles() {
+            const colors = ['rgba(106, 48, 147, 0.5)', 'rgba(160, 68, 255, 0.5)', 'rgba(255, 107, 107, 0.5)', 'rgba(76, 201, 240, 0.5)'];
+            
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random properties
+                const size = Math.random() * 5 + 2;
+                const posX = Math.random() * window.innerWidth;
+                const posY = Math.random() * window.innerHeight;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                const duration = Math.random() * 20 + 10;
+                const delay = Math.random() * 5;
+                
+                // Apply styles
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${posX}px`;
+                particle.style.top = `${posY}px`;
+                particle.style.background = color;
+                particle.style.opacity = Math.random() * 0.5 + 0.1;
+                particle.style.animation = `float ${duration}s ease-in-out ${delay}s infinite`;
+                
+                document.body.appendChild(particle);
+            }
+        }
+        
+        function animateCharacters() {
+            const ayo = document.getElementById('ayo-character');
+            const lola = document.getElementById('lola-character');
+            
+            // Initial positions
+            gsap.to(ayo, {
+                y: -window.innerHeight * 0.7,
+                x: 50,
+                duration: 2,
+                delay: 1,
+                ease: "power2.out"
+            });
+            
+            gsap.to(lola, {
+                y: window.innerHeight * 0.7,
+                x: -50,
+                duration: 2,
+                delay: 1,
+                ease: "power2.out"
+            });
+            
+            // Make characters draggable
+            Draggable.create(ayo, {
+                bounds: "body",
+                edgeResistance: 0.65,
+                type: "x,y",
+                throwProps: true
+            });
+            
+            Draggable.create(lola, {
+                bounds: "body",
+                edgeResistance: 0.65,
+                type: "x,y",
+                throwProps: true
+            });
+          
+// Example usage when user submits rating:
+// showClosingPage(selectedRating);
+            // Character interactions when near each other
+            document.addEventListener('mousemove', function(e) {
+                const ayoRect = ayo.getBoundingClientRect();
+                const lolaRect = lola.getBoundingClientRect();
+                
+                const distance = Math.sqrt(
+                    Math.pow(ayoRect.left - lolaRect.left, 2) + 
+                    Math.pow(ayoRect.top - lolaRect.top, 2)
+                );
+                
+                if (distance < 200) {
+                    ayo.style.transform = `scale(1.1) rotate(${5}deg)`;
+                    lola.style.transform = `scale(1.1) rotate(${-5}deg)`;
+                    
+                    if (distance < 100) {
+                        // Create a heart effect when they touch
+                        if (!document.querySelector('.heart-effect')) {
+                            const heart = document.createElement('div');
+                            heart.classList.add('heart-effect');
+                            heart.innerHTML = '💔';
+                            heart.style.position = 'fixed';
+                            heart.style.left = `${(ayoRect.left + lolaRect.left) / 2}px`;
+                            heart.style.top = `${(ayoRect.top + lolaRect.top) / 2}px`;
+                            heart.style.fontSize = '30px';
+                            heart.style.zIndex = '100';
+                            heart.style.opacity = '0';
+                            heart.style.transform = 'scale(0)';
+                            document.body.appendChild(heart);
+                            
+                            gsap.to(heart, {
+                                opacity: 1,
+                                scale: 1,
+                                y: -50,
+                                duration: 0.5
+                            });
+                            
+                            gsap.to(heart, {
+                                opacity: 0,
+                                scale: 0.5,
+                                y: -100,
+                                duration: 0.5,
+                                delay: 0.5,
+                                onComplete: () => heart.remove()
+                            });
+                        }
+                    }
+                } else {
+                    ayo.style.transform = 'scale(1) rotate(0)';
+                    lola.style.transform = 'scale(1) rotate(0)';
+                }
+            });
+        }
+        
+        function setupRatingSystem() {
+            const stars = document.querySelectorAll('.star');
+            const ratingContainer = document.querySelector('.rating-container');
+            const feedbackSection = document.querySelector('.rating-feedback');
+            const submitBtn = document.querySelector('.submit-rating');
+            let selectedRating = 0;
+            
+            // Make rating container visible when scrolled to
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            observer.observe(ratingContainer);
+            function createSungDesign() {
+  const sungContainer = document.createElement('div');
+  sungContainer.className = 'sung-design-container';
+  
+  sungContainer.innerHTML = `
+    <div class="sung-wordmark">
+      <span class="sung-letter s">S</span>
+      <span class="sung-letter u">U</span>
+      <span class="sung-letter n">N</span>
+      <span class="sung-letter g">G</span>
+    </div>
+  `;
+  
+  // Insert at beginning of container
+  ratingContainer.insertBefore(sungContainer, ratingContainer.firstChild);
+  
+  // Animate entrance (optional)
+  gsap.from('.sung-letter', {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.1,
+    ease: "back.out(1.2)",
+    delay: 0.3
+  });
+  
+  // Hover effects
+  const letters = document.querySelectorAll('.sung-letter');
+  letters.forEach(letter => {
+    letter.addEventListener('mouseenter', () => {
+      gsap.to(letter, {
+        y: -10,
+        rotation: () => (Math.random() - 0.5) * 20,
+        duration: 0.3,
+        ease: "elastic.out(1, 0.5)"
+      });
+    });
+    
+    letter.addEventListener('mouseleave', () => {
+      gsap.to(letter, {
+        y: 0,
+        rotation: 0,
+        duration: 0.5,
+        ease: "elastic.out(1, 0.3)"
+      });
+    });
+  });
+}
+
+// Call this when initializing your component
+createSungDesign();
+            // Add near the top of your setupRatingSystem() function
+function createFloatingLogos() {
+    // Container for all floating logos (prevents overflow)
+    const floatContainer = document.createElement('div');
+    floatContainer.className = 'floating-logos-container';
+    ratingContainer.appendChild(floatContainer);
+
+    // Logo configuration
+    const logos = [
+        { type: 'ayo', emoji: '🕵️‍♂️', count: 4, color: 'rgba(160, 68, 255, 0.8)' },
+        { type: 'lola', emoji: '🧖‍♀️', count: 3, color: 'rgba(255, 193, 7, 0.8)' }
+    ];
+
+    logos.forEach(logo => {
+        for (let i = 0; i < logo.count; i++) {
+            const logoElement = document.createElement('div');
+            logoElement.className = `floating-logo ${logo.type}-logo`;
+            logoElement.innerHTML = logo.emoji;
+            
+            // Random initial position (confined to container)
+            const posX = Math.random() * 80 + 10;
+            const posY = Math.random() * 80 + 10;
+            
+            logoElement.style.left = `${posX}%`;
+            logoElement.style.top = `${posY}%`;
+            logoElement.style.color = logo.color;
+
+            // Random size and rotation
+            const size = Math.random() * 30 + 30; // 30-60px
+            logoElement.style.fontSize = `${size}px`;
+            logoElement.style.transform = `rotate(${Math.random() * 360}deg)`;
+
+            floatContainer.appendChild(logoElement);
+            animateLogo(logoElement);
+        }
+    });
+}
+
+// Custom floating animation
+function animateLogo(logo) {
+    const duration = Math.random() * 15 + 15; // 15-30s
+    const xMovement = (Math.random() - 0.5) * 30; // -15% to +15%
+    const yMovement = (Math.random() - 0.5) * 30;
+    const rotation = (Math.random() - 0.5) * 180; // -90 to +90deg
+
+    gsap.to(logo, {
+        x: `${xMovement}%`,
+        y: `${yMovement}%`,
+        rotation: rotation,
+        duration: duration,
+        ease: "sine.inOut",
+        yoyo: true,
+        repeat: -1
+    });
+}
+
+// Call this when your container becomes visible
+createFloatingLogos();
+            
+            // Star rating interaction
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    const rating = parseInt(star.dataset.rating);
+                    selectedRating = rating;
+                    
+                    // Update star visuals
+                    stars.forEach((s, index) => {
+                        if (index < rating) {
+                            s.classList.add('active');
+                        } else {
+                            s.classList.remove('active');
+                        }
+                    });
+                    
+                    // Show feedback section with animation
+                    feedbackSection.classList.add('visible');
+                    gsap.from(feedbackSection, {
+                        height: 0,
+                        opacity: 0,
+                        duration: 0.8,
+                        ease: "power2.out"
+                    });
+                });
+                
+                // Hover effects
+                star.addEventListener('mouseenter', () => {
+                    const rating = parseInt(star.dataset.rating);
+                    stars.forEach((s, index) => {
+                        if (index < rating) {
+                            gsap.to(s.querySelector('svg'), {
+                                fill: 'rgba(160, 68, 255, 0.3)',
+                                duration: 0.2
+                            });
+                        }
+                    });
+                });
+                
+                star.addEventListener('mouseleave', () => {
+                    stars.forEach((s, index) => {
+                        if (!s.classList.contains('active')) {
+                            gsap.to(s.querySelector('svg'), {
+                                fill: 'rgba(255, 255, 255, 0.2)',
+                                duration: 0.2
+                            });
+                        }
+                    });
+                });
+            });
+            
+           // Replace your existing submitBtn event listener with this:
+// Replace your existing submitBtn event listener with this:
+submitBtn.addEventListener('click', () => {
+    const feedback = document.querySelector('.rating-feedback textarea').value;
+    console.log(`Rating: ${selectedRating}, Feedback: ${feedback}`);
+    
+    //Here you would normally send the rating and feedback to your server
+                console.log(`Rating: ${selectedRating}, Feedback: ${feedback}`);
+                
+                // Optional: Confetti effect for high ratings
+                if (selectedRating >= 4) {
+                    createConfetti();
+                }
+            });
+            function createConfetti() {
+                const colors = ['#6a3093', '#a044ff', '#ff6b6b', '#4cc9f0'];
+                
+                for (let i = 0; i < 100; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.classList.add('particle');
+                    
+                    // Random properties
+                    const size = Math.random() * 10 + 5;
+                    const posX = Math.random() * window.innerWidth;
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    
+                    // Apply styles
+                    confetti.style.width = `${size}px`;
+                    confetti.style.height = `${size}px`;
+                    confetti.style.left = `${posX}px`;
+                    confetti.style.top = '-10px';
+                    confetti.style.background = color;
+                    confetti.style.borderRadius = '50%';
+                    confetti.style.position = 'fixed';
+                    confetti.style.zIndex = '100';
+                    
+                    document.body.appendChild(confetti);
+                    
+                    // Animate
+                    gsap.to(confetti, {
+                        y: window.innerHeight + 10,
+                        x: posX + (Math.random() - 0.5) * 200,
+                        rotation: Math.random() * 360,
+                        duration: Math.random() * 3 + 2,
+                        ease: "power1.out",
+                        onComplete: () => confetti.remove()
+                    });
+                }
+            }
+        }
+        function animateOnScroll() {
+            const storySections = document.querySelectorAll('.story-section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        
+                        // Special animations for specific sections
+                        if (entry.target.id === 'intro') {
+                            gsap.from('#first-poem', {
+                                y: 50,
+                                opacity: 0,
+                                duration: 1,
+                                delay: 0.5
+                            });
+                        }
+                        
+                        if (entry.target.id === 'humiliation') {
+                            gsap.to('#ayo-character', {
+                                y: -window.innerHeight * 0.6,
+                                duration: 1,
+                                ease: "back.out(1.7)"
+                            });
+                            
+                            gsap.to('#lola-character', {
+                                y: window.innerHeight * 0.6,
+                                duration: 1,
+                                ease: "back.out(1.7)"
+                            });
+                        }
+                        
+                        if (entry.target.id === 'turning-point') {
+                            gsap.to('#ayo-character', {
+                                x: 0,
+                                y: 0,
+                                scale: 1.5,
+                                duration: 1.5,
+                                ease: "power2.out"
+                            });
+                            
+                            // Create a glow effect
+                            const glow = document.createElement('div');
+                            glow.style.position = 'fixed';
+                            glow.style.width = '200px';
+                            glow.style.height = '200px';
+                            glow.style.background = 'radial-gradient(circle, rgba(76, 201, 240, 0.5) 0%, rgba(76, 201, 240, 0) 70%)';
+                            glow.style.borderRadius = '50%';
+                            glow.style.left = `${ayoCharacter.getBoundingClientRect().left - 50}px`;
+                            glow.style.top = `${ayoCharacter.getBoundingClientRect().top - 50}px`;
+                            glow.style.zIndex = '5';
+                            glow.style.pointerEvents = 'none';
+                            document.body.appendChild(glow);
+                            
+                            gsap.to(glow, {
+                                scale: 2,
+                                opacity: 0,
+                                duration: 2,
+                                onComplete: () => glow.remove()
+                            });
+                        }
+                        
+                        if (entry.target.id === 'success') {
+                            gsap.to('#ayo-character', {
+                                x: -100,
+                                y: -100,
+                                scale: 2,
+                                duration: 1,
+                                ease: "power2.out"
+                            });
+                            
+                            const successItems = document.querySelectorAll('.success-item');
+                            gsap.from(successItems, {
+                                y: 50,
+                                opacity: 0,
+                                stagger: 0.2,
+                                duration: 0.8
+                            });
+                        }
+                        
+                        if (entry.target.id === 'return') {
+                            gsap.to('#ayo-character', {
+                                x: 100,
+                                y: -100,
+                                scale: 2,
+                                duration: 1,
+                                ease: "power2.out"
+                            });
+                            
+                            gsap.to('#lola-character', {
+                                x: -100,
+                                y: -100,
+                                scale: 1.5,
+                                duration: 1,
+                                ease: "power2.out"
+                            });
+                            
+                            const quotes = document.querySelectorAll('#final-conversation .quote');
+                            gsap.from(quotes, {
+                                x: -30,
+                                opacity: 0,
+                                stagger: 0.3,
+                                duration: 0.5
+                            });
+                        }
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            storySections.forEach(section => {
+                observer.observe(section);
+            });
+        }
+        
+        function setupInteractiveElements() {
+            const interactiveElements = document.querySelectorAll('.interactive-element');
+            
+            interactiveElements.forEach(element => {
+                element.addEventListener('mouseenter', () => {
+                    gsap.to(element, {
+                        y: -5,
+                        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)',
+                        duration: 0.3
+                    });
+                });
+                
+                element.addEventListener('mouseleave', () => {
+                    gsap.to(element, {
+                        y: 0,
+                        boxShadow: 'none',
+                        duration: 0.3
+                    });
+                });
+                
+                // Click effects
+                element.addEventListener('click', () => {
+                    gsap.to(element, {
+                        scale: 0.98,
+                        duration: 0.1,
+                        yoyo: true,
+                        repeat: 1
+                    });
+                    
+                    // Create a ripple effect
+                    const ripple = document.createElement('div');
+                    ripple.style.position = 'absolute';
+                    ripple.style.width = '100%';
+                    ripple.style.height = '100%';
+                    ripple.style.background = 'radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%)';
+                    ripple.style.top = '0';
+                    ripple.style.left = '0';
+                    ripple.style.borderRadius = 'inherit';
+                    ripple.style.pointerEvents = 'none';
+                    ripple.style.opacity = '1';
+                    element.appendChild(ripple);
+                    
+                    gsap.to(ripple, {
+                        scale: 2,
+                        opacity: 0,
+                        duration: 0.6,
+                        onComplete: () => ripple.remove()
+                    });
+                });
+            });
+            
+            // Special effect for poems
+            const poems = document.querySelectorAll('.poem');
+            poems.forEach(poem => {
+                poem.addEventListener('mouseenter', () => {
+                    gsap.to(poem, {
+                        backgroundColor: 'rgba(76, 201, 240, 0.2)',
+                        duration: 0.3
+                    });
+                });
+                
+                poem.addEventListener('mouseleave', () => {
+                    gsap.to(poem, {
+                        backgroundColor: 'rgba(76, 201, 240, 0.1)',
+                        duration: 0.3
+                    });
+                });
+            });
+        }
+        
+        function applyTypewriterEffect() {
+            const typewriterElements = document.querySelectorAll('.typewriter');
+            
+            typewriterElements.forEach(element => {
+                const text = element.textContent;
+                element.textContent = '';
+                
+                let i = 0;
+                const typing = setInterval(() => {
+                    if (i < text.length) {
+                        element.textContent += text.charAt(i);
+                        i++;
+                    } else {
+                        clearInterval(typing);
+                        element.style.borderRight = 'none';
+                    }
+                }, 100);
+            });
+        }
+        
+        // GSAP and Draggable (would normally be loaded from CDN)
+        // For demo purposes, we'll mock minimal implementations
+        if (typeof gsap === 'undefined') {
+            window.gsap = {
+                to: function(el, options) {
+                    el.style.transition = `all ${options.duration || 1}s ${options.ease || 'ease'}`;
+                    if (options.delay) {
+                        setTimeout(() => {
+                            for (let prop in options) {
+                                if (prop !== 'duration' && prop !== 'ease' && prop !== 'delay' && prop !== 'onComplete') {
+                                    el.style[prop] = options[prop];
+                                }
+                            }
+                            if (options.onComplete) options.onComplete();
+                        }, options.delay * 1000);
+                    } else {
+                        for (let prop in options) {
+                            if (prop !== 'duration' && prop !== 'ease' && prop !== 'onComplete') {
+                                el.style[prop] = options[prop];
+                            }
+                        }
+                        if (options.onComplete) options.onComplete();
+                    }
+                },
+                from: function(el, options) {
+                    const originalStyles = {};
+                    for (let prop in options) {
+                        if (prop !== 'duration' && prop !== 'ease' && prop !== 'delay' && prop !== 'onComplete') {
+                            originalStyles[prop] = el.style[prop];
+                            el.style[prop] = options[prop];
+                        }
+                    }
+                    
+                    setTimeout(() => {
+                        el.style.transition = `all ${options.duration || 1}s ${options.ease || 'ease'}`;
+                        for (let prop in originalStyles) {
+                            el.style[prop] = originalStyles[prop];
+                        }
+                        if (options.onComplete) options.onComplete();
+                    }, 10);
+                }
+            };
+            function animateFloatingCharacters() {
+            const floatingChars = document.querySelectorAll('.floating-character');
+            
+            floatingChars.forEach(char => {
+                const speed = parseFloat(char.dataset.speed);
+                const direction = parseInt(char.dataset.direction);
+                const startX = Math.random() * window.innerWidth;
+                const startY = Math.random() * window.innerHeight;
+                
+                // Set initial random position
+                char.style.left = `${startX}px`;
+                char.style.top = `${startY}px`;
+                
+                // Animate each character with slightly different movements
+                gsap.to(char, {
+                    x: `+=${200 * direction}`,
+                    y: `+=${100 * (direction > 0 ? 1 : -1)}`,
+                    rotation: 360 * direction,
+                    duration: 50 * speed,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "sine.inOut"
+                });
+                
+                // Make them more visible when near main characters
+                document.addEventListener('mousemove', (e) => {
+                    const charRect = char.getBoundingClientRect();
+                    const distance = Math.sqrt(
+                        Math.pow(charRect.left - e.clientX, 2) + 
+                        Math.pow(charRect.top - e.clientY, 2)
+                    );
+                    
+                    if (distance < 200) {
+                        char.style.opacity = '0.3';
+                        char.style.filter = 'blur(0.5px)';
+                    } else {
+                        char.style.opacity = '0.15';
+                        char.style.filter = 'blur(1px)';
+                    }
+                });
+            });
+        }
+            window.Draggable = {
+                create: function(el, options) {
+                    let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+                    
+                    el.onmousedown = dragMouseDown;
+                    
+                    function dragMouseDown(e) {
+                        e = e || window.event;
+                        e.preventDefault();
+                        pos3 = e.clientX;
+                        pos4 = e.clientY;
+                        document.onmouseup = closeDragElement;
+                        document.onmousemove = elementDrag;
+                    }
+                    
+                    function elementDrag(e) {
+                        e = e || window.event;
+                        e.preventDefault();
+                        pos1 = pos3 - e.clientX;
+                        pos2 = pos4 - e.clientY;
+                        pos3 = e.clientX;
+                        pos4 = e.clientY;
+                        
+                        let newTop = (el.offsetTop - pos2);
+                        let newLeft = (el.offsetLeft - pos1);
+                        
+                        if (options.bounds === "body") {
+                            newTop = Math.max(0, Math.min(newTop, window.innerHeight - el.offsetHeight));
+                            newLeft = Math.max(0, Math.min(newLeft, window.innerWidth - el.offsetWidth));
+                        }
+                        
+                        el.style.top = newTop + "px";
+                        el.style.left = newLeft + "px";
+                    }
+                    
+                    function closeDragElement() {
+                        document.onmouseup = null;
+                        document.onmousemove = null;
+                        
+                        if (options.throwProps) {
+                            // Simple momentum/throw effect
+                            const throwX = pos1 * 2;
+                            const throwY = pos2 * 2;
+                            
+                            gsap.to(el, {
+                                x: `+=${throwX}`,
+                                y: `+=${throwY}`,
+                                duration: 0.5,
+                                ease: "power2.out"
+                            });
+                        }
+                    }
+                }
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story landp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background: #f8f5f2;
+    color: #333;
+}
+
+.landing-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background: #f8f5f2;
+}
+
+.landing-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.landing-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.landing-subtitle {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(20px);
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.landing-circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 3rem;
+}
+
+.circle-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #6a3093;
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.circle-outer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #6a3093;
+    opacity: 0;
+    transform: scale(1.3);
+}
+
+.enter-button {
+    background: transparent;
+    border: 2px solid #6a3093;
+    color: #6a3093;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.enter-button:hover {
+    background: #6a3093;
+    color: white;
+}
+
+.enter-button:hover .arrow-icon {
+    stroke: white;
+}
+
+.arrow-icon {
+    width: 20px;
+    height: 20px;
+    stroke: #6a3093;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    transition: all 0.3s ease;
+}
+
+.landing-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bg-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(106, 48, 147, 0.1);
+}
+
+.shape1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -100px;
+}
+
+.shape2 {
+    width: 500px;
+    height: 500px;
+    bottom: -200px;
+    right: -150px;
+}
+
+.shape3 {
+    width: 200px;
+    height: 200px;
+    top: 40%;
+    right: 20%;
+}
+
+.main-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <div class="landing-page">
+        <div class="landing-content">
+            <h1 class="landing-title">My Dream Story</h1>
+            <div class="landing-subtitle">A journey begins with a single click</div>
+            <div class="landing-circle">
+                <div class="circle-inner"></div>
+                <div class="circle-outer"></div>
+            </div>
+            <a href="a.html">
+            <button class="enter-button">
+                <span>Begin Experience</span>
+                <svg viewBox="0 0 24 24" class="arrow-icon">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </button>
+            </a>
+        </div>
+        <div class="landing-background">
+            <div class="bg-shape shape1"></div>
+            <div class="bg-shape shape2"></div>
+            <div class="bg-shape shape3"></div>
+        </div>
+    </div>
+
+    <div class="main-content hidden">
+        <!-- Your actual story content will load here -->
+        <h2>Welcome to the Story</h2>
+        <p>This is where your main content appears...</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+    // Initial animation
+    const tl = gsap.timeline();
+    
+    tl.to('.landing-title', {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out"
+    })
+    .to('.landing-subtitle', {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out"
+    }, 0.3)
+    .to('.circle-inner', {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        ease: "elastic.out(1, 0.5)"
+    }, 0.6)
+    .to('.circle-outer', {
+        opacity: 0.6,
+        scale: 1,
+        duration: 1,
+        ease: "back.out(1.2)"
+    }, 0.6)
+    .to('.enter-button', {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out"
+    }, 0.9);
+
+    // Background shapes animation
+    gsap.to('.shape1', {
+        x: 50,
+        y: 50,
+        duration: 15,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+    });
+    
+    gsap.to('.shape2', {
+        x: -100,
+        y: -50,
+        duration: 20,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+    });
+    
+    gsap.to('.shape3', {
+        x: 30,
+        y: 30,
+        duration: 12,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+    });
+
+    // Enter button click handler
+    document.querySelector('.enter-button').addEventListener('click', () => {
+        const exitTl = gsap.timeline();
+        
+        exitTl.to('.landing-content > *', {
+            opacity: 0,
+            y: -20,
+            duration: 0.5,
+            stagger: 0.1,
+            ease: "power2.in"
+        })
+        .to('.landing-page', {
+            opacity: 0,
+            duration: 0.8,
+            ease: "power2.in"
+        })
+        .set('.landing-page', {
+            display: 'none'
+        })
+        .set('.main-content', {
+            display: 'block'
+        })
+        .from('.main-content', {
+            opacity: 0,
+            y: 20,
+            duration: 1,
+            ease: "power2.out"
+        });
+    });
+});
+    </script>
+</body>
+</html>
